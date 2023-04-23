@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neve&display=swap');
+
+#{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Bebas Neve', cursive;
+    background-color: #FBFBFB;
+    color: #444444;
+}
+
+a {
+    color: #444444;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a {
+    font-size: 20px;
+    padding: 22px;
+    display: block;
+}
+
+#menu{
+    display: none;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 150px 0 100px 0;
+}
+
+.header-txt{
+    width: 20%;
+}
+
+.header-txt h1{
+    font-size: 55px;
+}
+
+li {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.header-img {
+    width: 80%;
+    text-align: right;
+}
+.header-img img{
+    width: 800px;
+}
+
+.sec-1{
+    padding: 100px 0;
+    display: flex;
+    width: 100%;
+}
+
+h2{
+    font-size: 55px;
+}
+
+.sec-img{
+    width: 80%;
+}
+
+.sec-img img{
+    width: 800px;
+}
+
+.sec-txt{
+    width: 20%;
+}
+
+.sec-2{
+    text-align: right;
+}
+
+footer{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.footer {
+    font-size: 20px;
+}
+
+@media(max-width: 991px){
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        background-color: #444444;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a{
+        color: #FBFBFB;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: @vh;
+    }
+
+    .header-content{
+        padding: 100px 30px 30px 30px;
+        flex-direction: column;
+    }
+
+    .header-txt {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .header-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-img img{
+        width: 30px;
+    }
+
+    .sec-1 {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 80px;
+    }
+
+    .sec-img{
+        width: 100%;
+        order: 2;
+    }
+
+    .sec-img img{
+        width: 300px;
+    }
+
+    .sec-txt{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .sec-2{
+        text-align: center;
+    }
+
+    .footer{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}
