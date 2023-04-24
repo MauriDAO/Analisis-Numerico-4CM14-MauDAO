@@ -56,6 +56,10 @@ a {
     display: block;
 }
 
+.menu .navbar ul li {
+    font-size: 0px;
+}
+
 #menu{
     display: none;
 }
@@ -77,7 +81,7 @@ a {
 }
 
 .header-txt h1{
-    font-size: 55px;
+    font-size: 30px;
 }
 
 li {
@@ -100,7 +104,7 @@ li {
 }
 
 h2{
-    font-size: 55px;
+    font-size: 30px;
 }
 
 .sec-img{
